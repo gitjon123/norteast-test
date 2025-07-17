@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NorthEast Voyages</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar Start -->
+<nav class="navbar">
+  <h1>NorthEast Voyages</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="booking.html">Booking</a></li>
+  </ul>
+  </nav>
+
+<!-- Navigation Bar Ends -->
+<!-- Hero Section -->  
+<header class="hero">
+    <div class="hero-content">
+      <h2>Experience the Wonders of Northeast India</h2>
+      <p>Journey through tranquil valleys, vibrant cultures, and awe-inspiring landscapes with NorthEast Voyages.</p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="welcome-box">
+      <h2>Welcome to NorthEast Voyages</h2>
+      <p>
+        NorthEast Voyages is your trusted travel partner for exploring the enchanting beauty of Northeast India. Our expert team curates unforgettable journeys through lush landscapes, vibrant cultures, and hidden gems. Whether you seek adventure, relaxation, or cultural immersion, we ensure a seamless and memorable experience from start to finish.
+      </p>
+      <a href="booking.html?service=custom" class="welcome-btn">
+        Start Your Journey
+      </a>
+    </div>
+
+  </section>
+  <!-- Keep your header/nav here -->
+
+  <!-- Services Section -->
+ 
+<!-- 🌐 Updated Services Section -->
+<section id="services">
+  <div class="services-container">
+    <h2>Our Services</h2>
+    <div class="services-buttons">
+      <button class="service-btn" data-modal="modal-wildlife">Wildlife Tour</button>
+      <button class="service-btn" data-modal="modal-homestay">Home Stay</button>
+      <button class="service-btn" data-modal="modal-custom">Custom Tour</button>
+      <button class="service-btn" data-modal="modal-internet">Internet & Camera Services</button>
+      <button class="service-btn" data-modal="modal-adventure">Adventure Activities</button>
+      <button class="service-btn" data-modal="modal-culture">Cultural Experiences</button>
+    </div>
+  </div>
+</section>
+<!-- Services Section Ends -->
+  <!-- Wildlife Tour Modal -->
+<div class="modal" id="modal-wildlife">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://imgs.search.brave.com/bZsnfm123pVVHZkOhjuPEptA336qYxb7UhgbB2P9vI4/rs:fit:600:400:1/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNi8yMi81Mi9z/YWZhcmktNDcwMDQy/M182NDAuanBn" alt="Wildlife Tour" class="modal-img">
+    <h3>Wildlife Tour</h3>
+    <p>Explore Kaziranga, Manas, and more with our expert-guided wildlife adventures.</p>
+    <a href="booking.html?service=wildlife" class="book-btn">Book Now</a>
+  </div>
+</div>
+
+<!-- Home Stay Modal -->
+<div class="modal" id="modal-homestay">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://imgs.search.brave.com/9wQvQw8v7w7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6/rs:fit:600:400:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW5kaWF0aW1l/cy5jb20vaG9tZXN0/YXktbm9ydGhlYXN0/LWluZGlhLmpwZw" alt="Home Stay" class="modal-img">
+    <h3>Home Stay</h3>
+    <p>Comfortable stays with local families across Northeast destinations.</p>
+    <a href="booking.html?service=homestay" class="book-btn">Book Now</a>
+  </div>
+</div>
+
+<!-- Custom Tour Modal -->
+<div class="modal" id="modal-custom">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://imgs.search.brave.com/8Qw8v7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5/rs:fit:600:400:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmluZG1lLmNv/L2N1c3RvbS10b3Vy/LW5vcnRoZWFzdC1p/bmRpYS5qcGc" alt="Custom Tour" class="modal-img">
+    <h3>Custom Tour</h3>
+    <p>Create your personalized travel itinerary across Northeast India.</p>
+    <a href="booking.html?service=custom" class="book-btn">Book Now</a>
+  </div>
+</div>
+
+<!-- Internet & Camera Modal -->
+<div class="modal" id="modal-internet">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://imgs.search.brave.com/3Qw8v7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5/rs:fit:600:400:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmluZG1lLmNv/L2NhbWVyYS1zZXJ2/aWNlcy1ub3J0aGVh/c3QtaW5kaWEuanBn" alt="Internet & Camera Services" class="modal-img">
+    <h3>Internet & Camera Services</h3>
+    <p>Need smart home solutions? We connect you with the best local providers.</p>
+    <a href="booking.html?service=pic" class="book-btn">Book Now</a>
+  </div>
+</div>
+
+<!-- Adventure Modal -->
+<div class="modal" id="modal-adventure">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://imgs.search.brave.com/bZsnfm123pVVHZkOhjuPEptA336qYxb7UhgbB2P9vI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNi8yMi81Mi9z/YWZhcmktNDcwMDQy/M182NDAuanBn " alt="Adventure Activities" class="modal-img">
+    <h3>Adventure Activities</h3>
+    <p>River rafting, trekking, paragliding curated adventure experiences await you!</p>
+    <a href="booking.html?service=adventure" class="book-btn">Book Now</a>
+  </div>
+</div>
+
+<!-- Culture Modal -->
+<div class="modal" id="modal-culture">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="https://imgs.search.brave.com/5Qw8v7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5Qn6Qw7w5/rs:fit:600:400:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmluZG1lLmNv/L2N1bHR1cmFsLWV4/cGVyaWVuY2VzLW5v/cnRoZWFzdC1pbmRp/YS5qcGc" alt="Cultural Experiences" class="modal-img">
+    <h3>Cultural Experiences</h3>
+    <p>From Bihu to Monpa festivals  witness the beauty of Northeast cultures.</p>
+    <a href="booking.html?service=cultural" class="book-btn">Book Now</a>
+  </div>
+</div>
+
+
+
+<!-- Slideshow Section Starts -->
+<section class="slideshow">
+  <div class="slide fade">
+    <img src="https://imgs.search.brave.com/bZsnfm123pVVHZkOhjuPEptA336qYxb7UhgbB2P9vI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNi8yMi81Mi9z/YWZhcmktNDcwMDQy/M182NDAuanBn" alt="Scenery 1">
+  </div>
+  <div class="slide fade">
+    <img src="https://imgs.search.brave.com/bZsnfm123pVVHZkOhjuPEptA336qYxb7UhgbB2P9vI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNi8yMi81Mi9z/YWZhcmktNDcwMDQy/M182NDAuanBn" alt="Scenery 2">
+  </div>
+  <div class="slide fade">
+    <img src="https://imgs.search.brave.com/bZsnfm123pVVHZkOhjuPEptA336qYxb7UhgbB2P9vI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNi8yMi81Mi9z/YWZhcmktNDcwMDQy/M182NDAuanBn" alt="Scenery 3">
+  </div>
+
+  <!-- Arrows -->
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</section>
+<!-- Slideshow Section Ends -->
+
+<!--destination cards -->
+
+  <section class="destinations">
+   
+    <h3>Featured Destinations</h3>
+    <div class="cards">
+       <a href="booking.html?service=kaziranga">
+      <div class="card">
+        <img src="https://imgs.search.brave.com/bZsnfm123pVVHZkOhjuPEptA336qYxb7UhgbB2P9vI4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8x/Mi8xNi8yMi81Mi9z/YWZhcmktNDcwMDQy/M182NDAuanBn" alt="Kaziranga">
+        <h4>Kaziranga</h4>
+        <p>Home of the one-horned rhino, lush greenery, and wild safaris.</p>
+      </div>
+      </a>
+       <a href="booking.html?service=shillong">
+      <div class="card">
+        <img src="https://imgs.search.brave.com/E6PrD5pYCQEvMR2nlX4SWtO6u0LpZOiAQAFUHN-nems/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9t/ZXNtZXJpemluZy1z/Y2VuZXJ5LWJlYXV0/aWZ1bC1ncmVlbi1t/b3VudGFpbnMtd2l0/aC1jbG91ZHktc2t5/XzE4MTYyNC0yODU5/NS5qcGc_c2VtdD1h/aXNfaHlicmlkJnc9/NzQw" alt="Shillong">
+        <h4>Shillong</h4>
+        <p>The Scotland of the East — waterfalls, music, and rolling hills.</p>
+      </div>
+      </a>
+       <a href="booking.html?service=tawang">
+      <div class="card">
+        <img src="https://imgs.search.brave.com/xYy5eqFgB7ijwtmYFtu4aSWT-ANVZAsRPgaHXYIH0pA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIudGhyaWxsb3Bo/aWxpYS5jb20vaW1h/Z2VzL3Bob3Rvcy8w/MDAvMTEwLzU5Ni9v/cmlnaW5hbC8xNjg1/NzE0NzIyXzFxcG95/MHp6dmF3enZyOGFy/MnF2NjhubDg0Zmtf/MjQ0LmpwZz9ncmF2/aXR5PWNlbnRlciZ3/aWR0aD03NTImaGVp/Z2h0PTQ1MCZjcm9w/PWZpbGwmcXVhbGl0/eT1hdXRvJmZldGNo/X2Zvcm1hdD1hdXRv/JmZsYWdzPXN0cmlw/X3Byb2ZpbGUmZm9y/bWF0PWpwZyZzaWdu/X3VybD10cnVl " alt="Tawang">
+        <h4>Tawang</h4>
+        <p>Monasteries above the clouds. Peace. Prayer flags. Magic.</p>
+      </div>
+      </a>
+    </div>
+  </section>
+
+<!-- About Us Section -->
+<section id="about">
+  <div class="about-container">
+    <h2>About Us</h2>
+    <p>
+      NortheastEast Voyages is your gateway to the unexplored beauty of Northeast India. We offer curated travel experiences
+      that bring you closer to nature, culture, and unforgettable moments. Whether it's the misty mountains of Meghalaya or the
+      heritage trails of Assam, we ensure every journey feels personal, comfortable, and inspiring.
+    </p>
+  </div>
+</section>
+<!-- About Us Section Ends -->
+
+
+  <footer>
+    &copy; 2025 NorthEast Voyages. All rights reserved.
+  </footer>
+
+
+<!-- Slideshow JS Starts -->
+  <script>
+  let slideIndex = 0;
+  let slides, dots, slideTimer;
+
+  function showSlidesAuto() {
+    slides = document.getElementsByClassName("slide");
+    dots = document.getElementsByClassName("dot");
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      slides[i].setAttribute('aria-hidden', 'true');
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].setAttribute('aria-current', 'false');
+    }
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].setAttribute('aria-hidden', 'false');
+    dots[slideIndex - 1].className += " active";
+    dots[slideIndex - 1].setAttribute('aria-current', 'true');
+    slideTimer = setTimeout(showSlidesAuto, 4000);
+  }
+
+  function plusSlides(n) {
+    clearTimeout(slideTimer);
+    showSlidesManual(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    clearTimeout(slideTimer);
+    showSlidesManual(slideIndex = n);
+  }
+
+  function showSlidesManual(n) {
+    slides = document.getElementsByClassName("slide");
+    dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      slides[i].setAttribute('aria-hidden', 'true');
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].setAttribute('aria-current', 'false');
+    }
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].setAttribute('aria-hidden', 'false');
+    dots[slideIndex - 1].className += " active";
+    dots[slideIndex - 1].setAttribute('aria-current', 'true');
+    slideTimer = setTimeout(showSlidesAuto, 4000);
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    showSlidesAuto();
+    // Keyboard navigation for accessibility
+    document.querySelector('.slideshow').addEventListener('keydown', function(e) {
+      if (e.key === "ArrowLeft") plusSlides(-1);
+      if (e.key === "ArrowRight") plusSlides(1);
+    });
+  });
+  </script>
+  <script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+    // Toggle aria-expanded for accessibility
+    const hamburger = document.querySelector('.hamburger');
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !expanded);
+  }
+
+  // Responsive: Hide/show nav on resize
+  window.addEventListener('resize', function() {
+    const navLinks = document.getElementById('nav-links');
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('show');
+    }
+  });
+
+
+
+  // Slideshow keyboard nav
+  document.querySelector('.slideshow').addEventListener('keydown', function(e) {
+    if (e.key === "ArrowLeft") plusSlides(-1);
+    if (e.key === "ArrowRight") plusSlides(1);
+  });
+
+  // Hamburger accessibility
+  const hamburger = document.querySelector('.hamburger');
+  hamburger.setAttribute('tabindex', '0');
+  hamburger.setAttribute('role', 'button');
+  hamburger.setAttribute('aria-label', 'Toggle navigation menu');
+  hamburger.setAttribute('aria-expanded', 'false');
+  hamburger.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleMenu();
+    }
+  });
+</script>
+<script src="main.js"></script>
+
+
+
+</body>
+</html>

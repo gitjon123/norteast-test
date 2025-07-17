@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking - Northeast Voyages</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden { display: none; }
+    .service-section { padding: 2rem; border-bottom: 1px solid #ddd; }
+    h2 { color: #2c3e50; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; margin-top:1rem;">Book Your Experience</h1>
+<section id="default-message" class="booking-section">
+  <div class="container">
+    <h2>Welcome to Northeast Voyages Booking</h2>
+    <p>Start planning your dream trip with a custom tour — tell us your preferences below!</p>
+  </div>
+</section>
+
+  <!-- Placeholder Sections -->
+   <!-- Custom Tour Section -->
+ <section id="custom-tour" class="booking-section">
+  <div class="container">
+    <h2>Plan Your Custom Tour</h2>
+    <p>Tell us your preferences and we'll design the perfect trip for you!</p>
+
+    <form id="customTourForm" class="booking-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="10-digit number">
+      </div>
+
+      <div class="form-group">
+        <label for="start-date">Start Date</label>
+<input type="date" id="start-date" name="start-date" required>
+
+<label for="end-date">End Date</label>
+<input type="date" id="end-date" name="end-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="travelers">Number of Travelers</label>
+        <input type="number" id="travelers" name="travelers" min="1" required>
+      </div>
+
+      <div class="form-group">
+       <label for="places">Places You Want to Visit</label>
+<input type="text" id="places" name="places" list="place-options" placeholder="Start typing a place...">
+
+<datalist id="place-options">
+  <option value="Tezpur">
+  <option value="Kaziranga">
+  <option value="Shillong">
+  <option value="Majuli">
+  <option value="Tawang">
+</datalist>
+
+      </div>
+
+      <div class="form-group">
+        <label for="interests">Activities / Interests</label>
+        <textarea id="interests" name="interests" rows="3" placeholder="Wildlife, culture, trekking..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">Budget (Approx)</label>
+        <input type="text" id="budget" name="budget" placeholder="e.g. ₹15,000 - ₹20,000 per person">
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Custom Tour Request</button>
+    </form>
+  </div>
+</section>
+<!-- End Custom Tour Section -->
+
+<!-- Package Tour Section (Place after Custom Tour Section) -->
+<section id="package-tour" class="hidden booking-section">
+  <div class="container">
+    <h2>Book Your Tour Package</h2>
+    <p>Please review the details and complete your booking.</p>
+    <form id="package-tour-form" class="booking-form">
+      <div class="form-group">
+        <label for="packageDestination">Destination</label>
+        <input type="text" id="packageDestination" name="destination" readonly>
+      </div>
+      <div class="form-group">
+        <label for="packageDates">Suggested Travel Dates</label>
+        <input type="text" id="packageDates" name="dates" readonly>
+      </div>
+      <div class="form-group">
+        <label for="packageActivities">Included Activities</label>
+        <textarea id="packageActivities" name="activities" rows="2" readonly></textarea>
+      </div>
+      <div class="form-group">
+        <label for="packageName">Your Name</label>
+        <input type="text" id="packageName" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="packageEmail">Email</label>
+        <input type="email" id="packageEmail" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="packageTravelers">Number of Travelers</label>
+        <input type="number" id="packageTravelers" name="travelers" min="1" placeholder="e.g. 2" required>
+      </div>
+      <button type="submit" class="submit-btn">Book Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- End Package Tour Form -->
+
+  <section id="adventure" class="service-section hidden">
+    <h2>Adventure Activities</h2>
+    <p>Book trekking, rafting, and more thrilling experiences.</p>
+  </section>
+
+  <section id="cultural" class="service-section hidden">
+    <h2>Cultural Experiences</h2>
+    <p>Explore the traditions, dances, and festivals of Northeast India.</p>
+  </section>
+
+  <section id="wildlife" class="service-section hidden">
+    <h2>Wildlife Tour</h2>
+    <p>Safari, nature walks, and wildlife adventures.</p>
+  </section>
+
+  <section id="homestay" class="service-section hidden">
+    <h2>Home Stay</h2>
+    <p>Live like a local — book tribal and cultural stays.</p>
+  </section>
+
+  <section id="pic" class="service-section hidden">
+    <h2>Camera & Internet (Brokered Services)</h2>
+    <p>Get connected with local partners for camera & internet setups.</p>
+  </section>
+
+ 
+  <script src="main.js"></script>
+</body>
+</html>
